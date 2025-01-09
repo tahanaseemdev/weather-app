@@ -10,7 +10,7 @@ function App() {
     e.preventDefault();
     axios({
       method: 'get',
-      url: `http://api.weatherapi.com/v1/current.json?key=16f54e5cb33f48f694a123243250801&q=${city}`
+      url: `http://api.weatherapi.com/v1/current.json?key=<API_KEY>=${city}`
     })
       .then((response) => {
         setWeatherData(response.data);
